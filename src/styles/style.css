@@ -1,1 +1,48 @@
 @import url(global.css);
+
+body{
+    background-color: #000;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav-header ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-header ul li a{
+    text-decoration: none;
+    color: var(--color-gray1);
+    font-family: var(--font-family-alexandria);
+    font-size: var(--font-size-text1);
+}
+
+.nav-header ul li .active{
+    color: var(--color-white);
+}
+
+.container-btn-header{
+    display: flex;
+    gap: 16px;
+}
+
+.btn-login{
+    padding: 10px 24px;
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: (--font-family-alexandria);
+}
+.btn-primary{
+    padding: 10px 24px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 40px;
+    background-color: var(--color-green);
+}
