@@ -125,7 +125,7 @@ h1 {
 .section-partners{
     display: flex;
     flex-direction: column;
-    align-items: column;
+    align-items: center;
     gap: 40px;
     background-color: var(--color-gray4);
 }
