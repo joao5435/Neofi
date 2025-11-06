@@ -230,12 +230,15 @@ h1 {
     padding: 60px 0px;
 }
 
-.content-statics{    
+.content-statistcs{    
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 20px;
 }
 .content-statistcs span{
+
     color: var(--color-green);
     border: 1px solid var(--color-gray3);
     padding: 12px 20px;
@@ -255,27 +258,34 @@ h1 {
     color: var(--color-gray1);
     font-size: var(--font-size-button);
     font-family: var(--font-family-alexandria);
-    width: 644px;
     text-align: center;
     line-height: 140%;
 }
 
 .container-number-statistics{
     display: flex;
-    flex-direction: column;
+    text-align: center;
+    align-items: center;
     gap: 20px;
     text-align: center;
 }
 
 .number-statistics{
+    display: flex;
+    flex-direction: column;
     font-family: var(--font-family-alexandria);
     font-size: var(--font-size-title2);
     color: var(--color-green);
     font-weight: 400;
 }
 
+.number-statistics h3{
+    color: var(--color-green);
+    font-family: var(--font-family-alexandria) ;
+}
+
 .number-statistics p{
     color: var(--color-gray1);
     font-family: var(--font-family-Inter);
-    
+
 }
