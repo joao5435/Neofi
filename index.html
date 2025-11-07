@@ -4,26 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NeoFi</title>
     <meta name="author" content="Matheus Maia Alvarez">
-    <meta name="description" content="Este é um site sobre web design e
+    <meta name="description" content="Este é um site sobre web design e 
     desenvolvimento. Aprenda HTML e CSS">
     <meta name="keywords" content="HTML e CSS">
+    <link rel="stylesheet" href="./src/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-
-    <meta name="keywords" content="HTML e CSS">
-
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <img src="/src/assets/images/Logo.svg" alt="">
+        <img src="./src/assets/images/Logo.svg" alt="Logo NeoFi">
+
         <nav class="nav-header">
             <ul>
                 <li><a href="" class="active">Home</a></li>
@@ -32,34 +35,40 @@
                 <li><a href="">FAQ</a></li>
             </ul>
         </nav>
+
         <nav class="container-btn-header">
             <a href="" class="btn-login">Log in</a>
-            <a href="" class="btn-try">Try for free</a>
+            <a href="" class="btn-primary">Try For Free</a>
         </nav>
+
     </header>
 
     <main>
         <div class="content-main">
             <span>
-                <img src="/src/assets/images/Ellipse 30.svg" alt=""> Decentralised
+                <img src="./src/assets/images/Ellipse 30.svg" alt="">
+                Decentralised
             </span>
             <h1>Revolutionizing Web3 Finance</h1>
             <p>Secure, scalable, and decentralized solutions for your digital assets—experience the future of financial
                 freedom.</p>
             <div class="container-btn-main">
-                <a href="" class="btn-green"> Get Started</a>
-                <a href="" class="btn-primary"> <img src="./src/assets/images/Vector.svg" alt=""> Watch video</a>
+                <a href="" class="btn-green">Get Started</a>
+                <a href="" class="btn-secondary">
+                    <img src="./src/assets/images/icon-play.svg" alt="">
+                    Watch video
+                </a>
             </div>
         </div>
-        <img src="src/assets/images/Shape-2 2.svg" alt="">
+
+        <img src="./src/assets/images/illustration-main.svg" alt="Ilustração de um aspiral verde e azul">
+
     </main>
 
     <section class="section-partners">
-
-        <div>
+        <div class="content-partners">
             <h2>Satisfied partners</h2>
         </div>
-
         <div class="container-images-partners">
             <img src="./src/assets/images/Logo01.svg" alt="logo empresa 1">
             <img src="./src/assets/images/Logo02.svg" alt="logo empresa 2">
@@ -67,52 +76,43 @@
             <img src="./src/assets/images/Logo04.svg" alt="logo empresa 4">
             <img src="./src/assets/images/Logo05.svg" alt="logo empresa 5">
         </div>
-
     </section>
 
     <section class="section-breakdown">
-
         <div class="content-breakdown">
-
-            <span>features</span>
-
+            <span>Features</span>
             <h2>Future Breakdown</h2>
-
             <p>Secure, scalable, and decentralized solutions for your digital assets experience the future of financial
                 freedom.</p>
         </div>
         <div class="container-cards-breakdown">
-
             <div class="card-breakdown">
-                <img src="src/assets/images/Icons.svg" alt="">
+                <img src="./src/assets/images/Icons01.svg" alt="Ilustração escalabilidade" loading="lazy">
                 <div>
                     <h3>Scalability</h3>
                     <p>Adapt and grow, no matter the demand on grow</p>
                 </div>
             </div>
-
             <div class="card-breakdown">
-                <img src="src/assets/images/Icons 2.svg" alt="">
+                <img src="./src/assets/images/Scale.svg" alt="Ilustração Descentralização" loading="lazy">
                 <div>
                     <h3>Decentralisation</h3>
                     <p>Decentralization. Web3 aims to move away from the centralized</p>
                 </div>
             </div>
             <div class="card-breakdown">
-                <img src="src/assets/images/Icons 3.svg" alt="">
+                <img src="./src/assets/images/Icons.svg" alt="Ilustração conectividade" loading="lazy">
                 <div>
                     <h3>Connectivity</h3>
                     <p>computers will be able to understand information similarly to humans</p>
                 </div>
             </div>
-
         </div>
-
     </section>
 
     <section class="section-statistics">
 
-        <div class="content-statistcs">
+        <div class="content-statistics">
             <span>Statistics</span>
 
             <h2>Completely Leverage product</h2>
@@ -127,68 +127,75 @@
                 <h3>2M+</h3>
                 <p>users</p>
             </div>
-        </div>
 
-        <div>
             <div class="number-statistics">
                 <h3>500k+</h3>
                 <p>Transactions</p>
             </div>
-        </div>
 
-        <div>
             <div class="number-statistics">
                 <h3>35+</h3>
                 <p>Countries</p>
             </div>
         </div>
 
-
-
     </section>
 
     <section class="section-blockchain">
-        <div class="section-blockchain-content">
-            <span>feature</span>
-            <h2>the future of blockchain technology</h2>
+
+        <div class="content-blockchain">
+            <span>Feature</span>
+            <h2>The future of blockchain technology</h2>
             <p>Leading the way in blockchain innovation, we are redefining how the world connects, secures, and
                 transacts, bringing a new era of decentralized technology.</p>
         </div>
 
         <div class="container-blockchain">
-            <img src="" alt="">
+            <img src="./src/assets/images/illustration-blockchain.svg" alt="Ilustração de um espiral distorcido"
+                loading="lazy">
 
             <div class="container-cards-blockchain">
-                <img src="src/assets/images/hugeicons_flow-connection.svg" alt="">
-                <div>
-                    <h3>Connectivity and ubiquity</h3>
-                    <p>Connectivity and Ubiquity. The focal points of Web 3.0 emphasize connectivity and ubiquity,
-                        ensuring seamless interactions between users and devices within</p>
-                </div>
 
-                <div class="content-card-blockchain">
-                    <img src="src/assets/images/material-symbols_security.svg" alt="">
-                    <div class="card-blockchain">
+                <div class="card-blockchain">
+                    <img src="./src/assets/images/icon-block01.svg" alt="Ilustração de conectividade" loading="lazy">
+
+                    <div class="content-card-blockchain">
+                        <h3>Connectivity and ubiquity</h3>
+                        <p>Connectivity and Ubiquity. The focal points of Web 3.0 emphasize connectivity and ubiquity,
+                            ensuring seamless interactions between users and devices within</p>
+                    </div>
+
+                </div>
+                <div class="card-blockchain">
+                    <img src="./src/assets/images/icon-block02.svg" alt="Ilustração de segurança" loading="lazy">
+
+                    <div class="content-card-blockchain">
                         <h3>Secure Transaction</h3>
                         <p>Ensuring every transaction is protected with cutting-edge security, giving you the confidence
                             to exchange, invest, and grow in a safe and trusted environment.</p>
                     </div>
-                </div>
 
+                </div>
                 <div class="card-blockchain">
-                    <img src="src/assets/images/hugeicons_blockchain-02.svg" alt="">
-                    <div>
+                    <img src="./src/assets/images/icon-block03.svg" alt="Ilustração de blockchain" loading="lazy">
+
+                    <div class="content-card-blockchain">
                         <h3>Blockchain and decentralization</h3>
                         <p>Most important of all, the assurance of blockchain and decentralization helps in encouraging
                             communication between software and browser plugins.</p>
                     </div>
+
                 </div>
 
+            </div>
+
+        </div>
 
     </section>
 
+   
+
 
 </body>
-
 
 </html>

@@ -1,4 +1,4 @@
-@import url(global.css);
+@import url('./global.css');
 
 body{
     background-color: #000;
@@ -6,7 +6,7 @@ body{
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px 0;
 }
@@ -25,32 +25,38 @@ header{
 }
 
 .nav-header ul li .active{
-    display: flex;
     color: var(--color-white);
 }
 
 .container-btn-header{
-    font-family: var(--font-family-alexandria);
     display: flex;
-    gap: 16px;
+    align-items: center;
+    gap: 16px;    
 }
 
 .btn-login{
     padding: 10px 24px;
     color: var(--color-white);
     text-decoration: none;
-    font-family: (--font-family-alexandria);
+    font-family: var(--font-family-alexandria);
 }
 
-main {
+.btn-primary{
+    background-color: var(--color-green);
+    padding: 10px 24px;
+    border-radius: 40px;
+    color: #000;
+    font-family: var(--font-family-alexandria);
+    text-decoration: none;
+}
+
+main{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 60px 0;
     gap: 100px;
 }
-
-
 
 .content-main{
     display: flex;
@@ -61,82 +67,67 @@ main {
 .content-main span{
     display: flex;
     align-self: self-start;
-    color: var(--color-green);
     gap: 8px;
+    color: var(--color-green);
     border: 1px solid var(--color-gray3);
     padding: 10px 12px;
     border-radius: 24px;
     font-family: var(--font-family-alexandria);
 }
 
-h1 {
+h1{
     color: var(--color-white);
     font-size: var(--font-size-title1);
+    width: 521px;
     font-family: var(--font-family-alexandria);
-    width: 531px;
 }
 
 .content-main p {
-    color: var(--font-size-subtitle);
-    font-size: var(--font-size-subtitle);
-    font-family: var(--font-family-Inter);
     color: var(--color-gray1);
-    width: 584px;
-
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-subtitle);
+    width: 583px;
 }
 
 .container-btn-main{
-   display: flex;
-   gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 .btn-green{
-    padding: 14px 24px;
     background-color: var(--color-green);
+    padding: 14px 24px;
     border-radius: 40px;
     color: #000;
     text-decoration: none;
     font-family: var(--font-family-alexandria);
-    font-size: var(--font-size-button);
 }
 
-
-.btn-try{
-    padding: 10px 24px;
-    background-color: var(--color-green) ;
-    text-decoration: none;
-    font-size: var(--font-size-text1);
-    color: #000;
-}
-
-.btn-primary{
-    border-radius: 40px;
-    gap: 16px;
+.btn-secondary{
     display: flex;
-    background-color: #000;
+    align-items: center;
+    gap: 6px;
+    padding: 14px 24px;
+    border: 1px solid var(--color-gray2);
+    border-radius: 40px;
     color: var(--color-white);
     text-decoration: none;
-    border: 1px solid var(--color-gray2);
-    font-size: var(--font-size-button);
     font-family: var(--font-family-alexandria);
-    padding: 15px 54px;
-}
+}   
 
 .section-partners{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-    padding: 40px 0px;
+    gap: 40px;
     background-color: var(--color-gray4);
+    padding: 40px 0;
 }
-
 .section-partners h2{
     color: var(--color-gray1);
     font-size: var(--font-size-text1);
     font-family: var(--font-family-alexandria);
 }
-
 .container-images-partners{
     display: flex;
     gap: 50px;
@@ -154,7 +145,6 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     gap: 20px;
 }
 
@@ -172,15 +162,13 @@ h1 {
     font-size: var(--font-size-title2);
     color: var(--color-white);
     font-weight: 400;
-
 }
 
 .content-breakdown p{
-    font-family: var(--font-family-Inter);
+    font-family: var(--font-family-inter);
     color: var(--color-gray1);
-    font-size: var(--font-size-button);
-    text-align: center;
     width: 572px;
+    text-align: center;
 }
 
 .container-cards-breakdown{
@@ -197,24 +185,24 @@ h1 {
     padding: 48px 36px;
     background-color: #ffffff04;
     border: 1px solid var(--color-gray3);
+    border-radius: 12px;
 }
 
 .card-breakdown div{
-    align-items: center;
     display: flex;
-    text-align: center;
     flex-direction: column;
     gap: 16px;
+    text-align: center;
 }
 
 .card-breakdown div h3{
     color: var(--color-white);
     font-size: var(--font-size-subtitle);
-    font-family: var(--font-family-Inter);
+    font-family: var(--font-family-inter);
     font-weight: 400;
 }
 
-.card-breakdown div p{
+.card-breakdown div p {
     color: var(--color-gray1);
     font-size: var(--font-size-text1);
     font-family: var(--font-family-alexandria);
@@ -227,18 +215,17 @@ h1 {
     align-items: center;
     gap: 60px;
     background-color: var(--color-gray4);
-    padding: 60px 0px;
+    padding: 60px 0;
 }
 
-.content-statistcs{    
+.content-statistics{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
-.content-statistcs span{
 
+.content-statistics span{
     color: var(--color-green);
     border: 1px solid var(--color-gray3);
     padding: 12px 20px;
@@ -247,45 +234,128 @@ h1 {
     font-size: var(--font-size-text2);
 }
 
-.content-statistcs h2{
+.content-statistics h2{
     color: var(--color-white);
     font-family: var(--font-family-alexandria);
     font-size: var(--font-size-title2);
     font-weight: 400;
 }
 
-.content-statistcs p {
+.content-statistics p{
     color: var(--color-gray1);
     font-size: var(--font-size-button);
     font-family: var(--font-family-alexandria);
+    width: 644px;
     text-align: center;
-    line-height: 140%;
+    line-height: 140%;    
 }
 
 .container-number-statistics{
     display: flex;
-    text-align: center;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
+    justify-content: center;
+    gap: 72px;
 }
 
 .number-statistics{
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    text-align: center;    
+}
+
+.number-statistics h3{
     font-family: var(--font-family-alexandria);
     font-size: var(--font-size-title2);
     color: var(--color-green);
     font-weight: 400;
 }
 
-.number-statistics h3{
-    color: var(--color-green);
-    font-family: var(--font-family-alexandria) ;
-}
-
 .number-statistics p{
     color: var(--color-gray1);
-    font-family: var(--font-family-Inter);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-subtitle);
+}
 
+.section-blockchain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 0;
+}
+
+.content-blockchain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.content-blockchain span{
+    border: 1px solid var(--color-gray3);
+    padding: 12px 20px;
+    border-radius: 24px;
+    color: var(--color-green);
+    font-family: var(--font-family-alexandria);
+    font-size: var(--font-size-text2);
+}
+
+.content-blockchain h2{
+    font-family: var(--font-family-alexandria);
+    font-size: var(--font-size-title2);
+    color: var(--color-white);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.content-blockchain p {
+    font-family: var(--font-family-inter);
+    color: var(--color-gray1);
+    font-size: var(--font-size-button);
+    text-align: center;
+    width: 644px;
+    line-height: 140%;
+}
+
+.container-blockchain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.container-cards-blockchain{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card-blockchain{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background-color: var(--color-gray4);
+    border: 1px solid var(--color-gray2);
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+
+.content-card-blockchain{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.content-card-blockchain h3{
+    color: var(--color-white);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-subtitle);
+    font-weight: 400;
+}
+
+.content-card-blockchain p {
+    color: var(--color-gray1);
+    font-family: var(--font-family-alexandria);
+    width: 530px;   
 }
