@@ -359,3 +359,68 @@ h1{
     font-family: var(--font-family-alexandria);
     width: 530px;   
 }
+
+.section-faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 0px;
+    background-color: var(--color-gray4);
+}
+
+.content-faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+
+}
+
+.content-faq span{
+    color: var(--color-green);
+    font-family: var(--font-family-alexandria);
+    padding: 12px 20px;
+    border: 1px solid var(--color-gray3);
+    border-radius: 24px;
+    font-size: var(--font-size-text2);
+}
+
+.content-faq h2{
+    color: var(--color-white);
+    font-size: var(--font-size-title2);
+    font-family: var(--font-family-alexandria);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.content-faq p{
+    color: var(--color-gray1);
+    font-family: var(--font-family-Inter);
+    font-size: var(--font-size-button);
+    text-align: center;
+    width: 644px;
+    line-height: 140%;
+}
+
+.conteiner-faq{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.faq-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid var(--color-gray3);
+    width: 792px;
+}
+
+.faq-item h3{
+    color: var(--color-white);
+    font-family: var(--font-family-alexandria);
+    font-size: var(--font-size-text1);
+    font-weight: 400;
+}
